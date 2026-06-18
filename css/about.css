@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+}
+
+
+/* Mobiles */
+@media (max-width: 767px) {
+
+    /*Header*/
+
+    .heading header {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen;
+        width: 100vw;   
+    }
+
+    .heading .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .heading nav {
+        display: flex;
+        flex-direction: row;       
+    }
+
+    #home a, #about a, #products a, #login a{
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        
+    }
+
+    .heading {
+        height: 10vh;
+    }
+
+    #home a, #about a, #products a, #login a {
+        font-size: 4.5vmin;
+    }
+
+    .heading .logo {
+        width: 25vw;
+        height: 10vh;
+    }
+
+    .heading .logo img {
+        width: 35vw;
+        height: auto;
+    }
+
+    .heading nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2vmin;
+        align-items: center;
+        margin-left: 5vmin;     
+    }
+
+    /*Header*/
+
+    /*Body*/
+
+    .body {
+        display: flex;
+        flex-direction: row;
+        height: 76vh;
+    }
+
+    .body .about-us {
+        display: flex;
+        flex-direction: column;
+        height: 76vh;
+        width: 50vw;
+        background: lightseagreen;
+    }
+
+    .body .about-us header {
+        width: 50vw;
+        height: 25vh;
+        overflow: hidden;
+    }
+
+    .body .about-us header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .body .about-us article {
+        display: flex;
+        flex-direction: column;
+        height: 51vh;
+        width: 50vw;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .body .what-we-do {
+        display: flex;
+        flex-direction: column;
+        height: 76vh;
+        width: 50vw;
+    }
+
+
+    /*Body*/
+
+    /*Footer*/
+
+    .footing {
+        margin-top: auto;
+    }
+
+    .footing footer {
+        display: flex;
+        flex-direction: column;
+        background: lightseagreen;
+        
+    }
+
+    .footing .bar {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen;
+        height: 10vh;
+    }
+
+    .footing .bar .inner {
+        width: 46vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar .inner .follow-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46vw;
+        height: 2vh;
+    }
+
+    .footing .bar .inner .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vmin;
+    }
+
+    .footing .bar .inner .icons a img {
+        height: 7vh;
+        width: 12vw;
+    }
+
+    .footing .bar .inner .follow-us p {
+        margin-top: 1vmin;
+        text-align: center;
+        color: white;
+        font-size: 3vmin;
+    }
+
+    .footing .bar .contact {
+        width: 50vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar  address p {
+        font-size: 3vmin;
+        color: white;
+    }
+
+    .footing .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        height: 4vh;
+    }
+
+    .footing .copyright p {
+        text-align: center;
+        color: white;
+        font-size: 3vmin;
+    }
+
+    /*Footer*/
+}
+
+/* Notebooks and desktops */
+@media (min-width: 1024px) {
+    /*Header*/
+
+    .heading header {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen; 
+    }
+
+    .heading .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    #home a, #about a, #products a, #login a{
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        
+    }
+
+    .heading {
+        height: 12vh;
+    }
+
+    #home a, #about a, #products a, #login a {
+        font-size: 4vmin;
+    }
+
+    .heading .logo {
+        width: 20vw;
+        height: 12vh;
+    }
+
+    .heading .logo img {
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .heading nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2vmin;
+        align-items: center;
+        margin-left: 10vmin;
+    }
+
+    /*Header*/
+
+     /*Footer*/
+
+    .footing {
+        margin-top: auto;
+    }
+
+    .footing footer {
+        display: flex;
+        flex-direction: column;
+        background: lightseagreen;
+    }
+
+    .footing .bar {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen;
+        height: 10vh;
+    }
+
+    .footing .bar .inner {
+        width: 50vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar .inner .follow-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 3vh;
+    }
+
+    .footing .bar .inner .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vmin;
+    }
+
+    .footing .bar .inner .icons a img {
+        height: 7vh;
+        width: 5vw;
+    }
+
+    .footing .bar .inner .follow-us p {
+        text-align: center;
+        color: white;
+    }
+
+    .footing .bar .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar .contact address p {
+        color: white;
+        font-size: 2vmin;
+    }
+
+
+    
+
+    .footing .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        height: 3vh;
+    }
+
+    .footing .copyright p {
+        text-align: center;
+        color: white;
+        font-size:1.5vmin;
+    }
+
+   
+    /*Footer*/
+
+}
