@@ -210,6 +210,25 @@ html {
         align-items: center;
     }
 
+    .sign-in .go-back-button {
+        display: flex;
+        flex-direction: row;
+        height: 10vh;
+        width: 45vw;
+    }
+
+    .sign-in .go-back-button a button {
+        margin-top: 5vmin;
+        margin-left: 5vmin;
+        height: 5vh;
+        width: 30vw;
+        border-radius: 20vmin;
+        border: solid white;
+        background: lightseagreen;
+        color: white;
+        text-align: center;
+    }
+
     .sign-in .sign-in-content header {
         margin-top: 35vmin;
     }
