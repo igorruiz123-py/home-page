@@ -88,13 +88,13 @@ main {
     .body {
         display: flex;
         flex-direction: row;
-        height: 76vh;
+        height: 85vh;
     }
 
     .body .about-us {
         display: flex;
         flex-direction: column;
-        height: 76vh;
+        height: 85vh;
         width: 50vw;
         background: lightseagreen;
     }
@@ -118,13 +118,62 @@ main {
         background: rgba(0, 0, 0, 0.3);
     }
 
+    .body .about-us article h2 {
+        margin-top: 5vmin;
+        text-align: center;
+        color: white;
+        font-size: 5vmin;
+    }
+
+    .body .about-us article p {
+        margin-top: 5vmin;
+        text-align: left;
+        color: white;
+    }
+
     .body .what-we-do {
         display: flex;
         flex-direction: column;
-        height: 76vh;
+        height: 85vh;
         width: 50vw;
+        background: #C3EDFD;
     }
 
+    .body .what-we-do .mission {
+        margin-left: 6vmin;
+        margin-top: 5vmin;
+        font-size: 5vmin;
+    }
+
+    .body .what-we-do .mission p {
+        margin-top: 3vmin;
+        font-size: 4vmin;
+        margin-bottom: 1vmin;
+    }
+
+    .body .what-we-do .value {
+        margin-left: 6vmin;
+        margin-top: 5vmin;
+        font-size: 5vmin;
+    }
+
+    .body .what-we-do .value p {
+        margin-top: 3vmin;
+        font-size: 4vmin;
+        margin-bottom: 1vmin;
+    }
+
+    .body .what-we-do .vision {
+        margin-left: 6vmin;
+        margin-top: 5vmin;
+        font-size: 5vmin;
+    }
+
+    .body .what-we-do .vision p {
+        margin-top: 3vmin;
+        font-size: 4vmin;
+        margin-bottom: 1vmin;
+    }
 
     /*Body*/
 
@@ -261,7 +310,100 @@ main {
         margin-left: 10vmin;
     }
 
-    /*Header*/
+    /*Header*//*Body*/
+
+    .body {
+        display: flex;
+        flex-direction: row;
+        height: 75vh;
+    }
+
+    .body .about-us {
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+        width: 50vw;
+        background: lightseagreen;
+    }
+
+    .body .about-us header {
+        width: 50vw;
+        height: 75vh;
+        overflow: hidden;
+    }
+
+    .body .about-us header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .body .about-us article {
+        display: flex;
+        flex-direction: column;
+        height: 51vh;
+        width: 50vw;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .body .about-us article h2 {
+        margin-top: 5vmin;
+        text-align: center;
+        color: white;
+        font-size: 5vmin;
+    }
+
+    .body .about-us article p {
+        margin-top: 5vmin;
+        text-align: center;
+        color: white;
+    }
+
+    .body .what-we-do {
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+        width: 50vw;
+        background: #C3EDFD;
+    }
+
+    .body .what-we-do .mission {
+        margin-left: 6vmin;
+        margin-top: 2vmin;
+        font-size: 4vmin;
+    }
+
+    .body .what-we-do .mission p {
+        margin-top: 1vmin;
+        font-size: 2.5vmin;
+        margin-bottom: 1vmin;
+    }
+
+    .body .what-we-do .value {
+        margin-left: 6vmin;
+        margin-top: 2vmin;
+        font-size: 4vmin;
+    }
+
+    .body .what-we-do .value p {
+        margin-top: 1vmin;
+        font-size: 2.5vmin;
+        margin-bottom: 1vmin;
+    }
+
+    .body .what-we-do .vision {
+        margin-left: 6vmin;
+        margin-top: 2vmin;
+        font-size: 4vmin;
+    }
+
+    .body .what-we-do .vision p {
+        margin-top: 1vmin;
+        font-size: 2.5vmin;
+        margin-bottom: 1vmin;
+    }
+
+    /*Body*/
+
 
      /*Footer*/
 
