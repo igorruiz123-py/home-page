@@ -1,0 +1,727 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 185vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+
+    /*Header*/
+
+    .heading header {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen;
+        width: 100vw;   
+    }
+
+    .heading .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .heading nav {
+        display: flex;
+        flex-direction: row;       
+    }
+
+    #home a, #about a, #products a, #login a{
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        
+    }
+
+    .heading {
+        height: 10vh;
+    }
+
+    #home a, #about a, #products a, #login a {
+        font-size: 4.5vmin;
+    }
+
+    .heading .logo {
+        width: 25vw;
+        height: 10vh;
+    }
+
+    .heading .logo img {
+        width: 35vw;
+        height: auto;
+    }
+
+    .heading nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2vmin;
+        align-items: center;
+        margin-left: 5vmin;     
+    }
+
+    /*Header*/
+
+    /*Body*/
+
+   .body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+   }
+   
+   .body header {
+        width: 100vw;
+        height: 10vh;
+        background: lightseagreen;
+   }
+
+   .body header div {
+        width: 100vw;
+        height: 10vh;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .body header div p {
+        font-size: 3.5vmin;
+        color: white;
+        text-align: center;
+   }
+
+   .body .products {
+        height: 90vh;
+        width: 100vw;
+        background: #C3EDFD;
+   }
+
+   .body .products .card-1 {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+   }
+
+   .body .products .card-1 .website {
+        width: 50vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+   }
+
+   .body .products .card-1 .website .website-image {
+        height: 25vh;
+        width: 50vw;
+   }
+
+   .body .products .card-1 .website .website-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-1 .website p {
+        margin-top: 1vmin;
+        font-size: 3vmin;
+        text-align: center;
+   }
+
+   .body .products .card-1 .mobile {
+        width: 50vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+   }
+
+   .body .products .card-1 .mobile-image {
+        height: 25vh;
+        width: 50vw;
+   }
+
+   .body .products .card-1 .mobile-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-1 .mobile p {
+        margin-top: 1vmin;
+        font-size: 3vmin;
+        text-align: center;
+   }
+
+   .body .products .card-2 {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+   }
+
+   .body .products .card-2 .desktop {
+        width: 50vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+   }
+
+   .body .products .card-2 .desktop .desktop-image {
+        height: 25vh;
+        width: 50vw;
+   }
+
+   .body .products .card-2 .desktop-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-2 .desktop p {
+        margin-top: 1vmin;
+        font-size: 3vmin;
+        text-align: center;
+   }
+
+   .body .products .card-2 .IoT {
+        width: 50vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .body .products .card-2 .IoT .IoT-image {
+        height: 25vh;
+        width: 50vw;
+   }
+
+   .body .products .card-2 .IoT-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-2 .IoT p {
+        margin-top: 1vmin;
+        font-size: 3vmin;
+        text-align: center;
+   }
+
+   .body .products .card-3 {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+   }
+
+   .body .products .card-3 .cloud {
+        width: 50vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .body .products .card-3 .cloud .cloud-image {
+        height: 25vh;
+        width: 50vw;
+   }
+
+   .body .products .card-3 .cloud-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-3 .cloud p {
+        margin-top: 1vmin;
+        font-size: 3vmin;
+        text-align: center;
+   }
+
+   .body .products .card-3 .infosec {
+        width: 50vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .body .products .card-3 .infosec .infosec-image {
+        height: 25vh;
+        width: 50vw;
+   }
+
+   .body .products .card-3 .infosec-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-3 .infosec p {
+        margin-top: 1vmin;
+        font-size: 3vmin;
+        text-align: center;
+   }
+
+    /*Body*/
+
+    /*Footer*/
+
+    .footing {
+        margin-top: auto;
+    }
+
+    .footing footer {
+        display: flex;
+        flex-direction: column;
+        background: lightseagreen;
+        
+    }
+
+    .footing .bar {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen;
+        height: 10vh;
+    }
+
+    .footing .bar .inner {
+        width: 46vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar .inner .follow-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46vw;
+        height: 2vh;
+    }
+
+    .footing .bar .inner .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vmin;
+    }
+
+    .footing .bar .inner .icons a img {
+        height: 7vh;
+        width: 12vw;
+    }
+
+    .footing .bar .inner .follow-us p {
+        margin-top: 1vmin;
+        text-align: center;
+        color: white;
+        font-size: 3vmin;
+    }
+
+    .footing .bar .contact {
+        width: 50vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar  address p {
+        font-size: 3vmin;
+        color: white;
+    }
+
+    .footing .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        height: 4vh;
+    }
+
+    .footing .copyright p {
+        text-align: center;
+        color: white;
+        font-size: 3vmin;
+    }
+
+    /*Footer*/
+
+}
+
+/* Notebooks and desktops */
+@media (min-width: 1024px) {
+    /*Header*/
+
+    .heading header {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen; 
+    }
+
+    .heading .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    #home a, #about a, #products a, #login a{
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        
+    }
+
+    .heading {
+        height: 12vh;
+    }
+
+    #home a, #about a, #products a, #login a {
+        font-size: 4vmin;
+    }
+
+    .heading .logo {
+        width: 20vw;
+        height: 12vh;
+    }
+
+    .heading .logo img {
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .heading nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2vmin;
+        align-items: center;
+        margin-left: 10vmin;
+    }
+
+    /*Header*/
+
+    /*Body*/
+
+   .body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+   }
+   
+   .body header {
+        width: 100vw;
+        height: 10vh;
+        background: lightseagreen;
+   }
+
+   .body header div {
+        width: 100vw;
+        height: 10vh;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .body header div p {
+        font-size: 2vmin;
+        color: white;
+        text-align: center;
+   }
+
+   .body .products {
+        height: 190vh;
+        width: 100vw;
+        background: #C3EDFD;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .body .products .card-1 {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+   }
+
+   .body .products .card-1 .website {
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+   }
+
+   .body .products .card-1 .website .website-image {
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .body .products .card-1 .website .website-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-1 .website p {
+        margin-top: 1vmin;
+        font-size: 2vmin;
+        text-align: center;
+   }
+
+   .body .products .card-1 .mobile {
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+   }
+
+   .body .products .card-1 .mobile-image {
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .body .products .card-1 .mobile-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-1 .mobile p {
+        margin-top: 1vmin;
+        font-size: 2vmin;
+        text-align: center;
+   }
+
+   .body .products .card-2 {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+   }
+
+   .body .products .card-2 .desktop {
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+   }
+
+   .body .products .card-2 .desktop .desktop-image {
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .body .products .card-2 .desktop-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-2 .desktop p {
+        margin-top: 1vmin;
+        font-size: 2vmin;
+        text-align: center;
+   }
+
+   .body .products .card-2 .IoT {
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .body .products .card-2 .IoT .IoT-image {
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .body .products .card-2 .IoT-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-2 .IoT p {
+        margin-top: 1vmin;
+        font-size: 2vmin;
+        text-align: center;
+   }
+
+   .body .products .card-3 {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+   }
+
+   .body .products .card-3 .cloud {
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .body .products .card-3 .cloud .cloud-image {
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .body .products .card-3 .cloud-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-3 .cloud p {
+        margin-top: 1vmin;
+        font-size: 2vmin;
+        text-align: center;
+   }
+
+   .body .products .card-3 .infosec {
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .body .products .card-3 .infosec .infosec-image {
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .body .products .card-3 .infosec-image img {
+        height: 100%;
+        max-width: 100%;
+   }
+
+   .body .products .card-3 .infosec p {
+        margin-top: 1vmin;
+        font-size: 2vmin;
+        text-align: center;
+   }
+
+    /*Body*/
+
+    /*Footer*/
+
+    .footing {
+        margin-top: auto;
+    }
+
+    .footing footer {
+        display: flex;
+        flex-direction: column;
+        background: lightseagreen;
+    }
+
+    .footing .bar {
+        display: flex;
+        flex-direction: row;
+        background: lightseagreen;
+        height: 10vh;
+    }
+
+    .footing .bar .inner {
+        width: 50vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar .inner .follow-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 3vh;
+    }
+
+    .footing .bar .inner .icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3vmin;
+    }
+
+    .footing .bar .inner .icons a img {
+        height: 7vh;
+        width: 5vw;
+    }
+
+    .footing .bar .inner .follow-us p {
+        text-align: center;
+        color: white;
+    }
+
+    .footing .bar .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        height: 10vh;
+        background: lightseagreen;
+    }
+
+    .footing .bar .contact address p {
+        color: white;
+        font-size: 2vmin;
+    }
+
+
+    
+
+    .footing .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        height: 3vh;
+    }
+
+    .footing .copyright p {
+        text-align: center;
+        color: white;
+        font-size:1.5vmin;
+    }
+
+   
+    /*Footer*/
+}
